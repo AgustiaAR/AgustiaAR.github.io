@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Makanan Nusantara.css">
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+             $("#btn").click(function(){
+                $("#div1").fadeIn();
+                $("#div2").fadeIn();
+                $("#div3").fadeIn();
+                $("#div4").fadeIn();
+                $("#div5").fadeIn();
+                $("#div6").fadeIn();
+                $("#div7").fadeIn();
+                $("#div8").fadeIn();
+                $("#div9").fadeIn();
+                $("#div10").fadeIn();
+                $("#div11").fadeIn();
+                $("#div12").fadeIn();
+                $("#div13").fadeIn();
+            });
+        });
+
+        let nama=prompt("Masukkan Nama : ");
+        document.getElementById("name").innerHTML=nama;
+
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio'+ counter).checked = true;
+            counter++;
+            if(counter > 3){
+                counter=1;
+            }
+        }, 5000)
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="awal">
+            <h3>
+                Selamat Datang
+                <span id="name">Anda</span>
+            </h3>
+        </div>
+        <div class="main-header">
+            <div class="title">
+                <h1>~ MAKANAN NUSANTARA ~</h1>
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="Makanan Nusantara.html">Beranda</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slide first">
+                <img src="gambar 1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="gambar 2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="gambar 3.png" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="main-content">
+            <table>
+                <button id="btn" >Click</button>
+               <tr>
+                    <th><img src="sie reuboh.jpg"  style="width: 300px; height:200px;"></th>
+                   <th>
+                       <h2>Provinsi Nangroe Aceh Darussalam</h2>
+                       <h3>Sie Reuboh</h3>
+                       <div id="div1" style="display:none;">Sie reuboh adalah masakan berbahan dasar daging sapi yang direbus dengan santan dan bumbu lainnya. Seperti bawang merah, bawang putih, cabai rawit, cabai merah, merica, dan masih banyak lagi. Tekstur daging sie reboh ini empuk dan rasanya kaya akan rempah.</div>
+                   </th>
+                </tr>
+                <tr>
+                    <th><img src="Gulai Belacan.jpg" style="width: 300px; height:200px;"></th>
+                    <th>
+                        <h2>Provinsi Riau</h2>
+                        <h3>Gulai Belacan</h3>
+                        <div id="div2" style="display:none;">Gulai belacan yang merupakan olahan udang berkuah kental yang terbuat dari santan. Kuah gulainya memiliki cita rasa khas yang terbuat dari campuran kemiri, lada, dan asam jawa. Biasanya, ada olahan gulai belacan dari udang air tawar dan udang laut</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="celimpungan.jpg" style=" width: 300px; height:200px;"></th>
+                    <th>
+                        <h2>Provinsi Sumatera Selatan</h2>
+                        <h3>Celimpungan</h3>
+                        <div id="div3" style="display:none;">Celempungan dibuat dengan bahan dasar sagu dan campuran ikan sama seperti pempek. Perbedaan antara celimpungan dengan pempek terdapat pada kuah saat penyajian. Makanan khas Sumatera Selatan ini memiliki kuah yang cenderung lebih kenyal dan berwarna kuning.
+                            Kalau soal tekstur, celimpungan lebih renyah dibandingkan pempek. Bentuknya pun lebih pipih dibandingkan dengan pempek.</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="soto betawi.jpg" style=" width: 300px; height:200px;"></th>
+                    <th> 
+                        <h2>Provinsi DKI Jakarta</h2>
+                        <h3>Soto Betawi</h3>
+                        <div id="div4" style="display:none;">Soto betawi terbuat dari jeroan sapi yang dicampur dengan kuah santan dan susu. Santan dan susu inilah yang menjadi pembedanya. Meskipun menggunakan bahan yang berlemak, makanan ini tetap nikmat disantap karena ada campuran rempah yang membuat rasanya semakin kaya.</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="Gudeg.png" style=" width: 300px; height:200px;"></th>
+                    <th>
+                        <h2>Provinsi DI Yogyakarta</h2>
+                        <h3>Gudeg</h3>
+                        <div id="div5" style="display:none;">Bahan dasar pembuatan gudeg pada umumnya memakai nangka muda. Meskipun begitu, kini banyak ditemukan gudeg dengan bahan dasar lain, seperti manggar, jamur hingga buah salak. Pada saat penyajian, biasanya gudeg dilengkapi dengan nasi putih, telur hingga daging ayam.</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="rawon.png" style="width: 300px; height:200px;"></th>
+                    <th>
+                        <h2>Provinsi Jawa Timur</h2>
+                        <h3>Rawon</h3>
+                        <div id="div6" style="display:none;">Kuah berwarna hitam pekat adalah ciri khasnya, karena diolah menggunakan kluwek. Biasanya rawon menggunakan daging sapi yang direbus dalam kuah kluwek dalam waktu lama hingga teksturnya empuk, disajikan bersama taoge, telur asin, serta kerupuk udang.
+                            Meskipun rawon terkenal sebagai makanan khas Surabaya, tapi beberapa daerah di Jawa Timur juga punya rawon khas. Misalnya seperti rawon Pasuruan dengan sate komoh sebagai pelengkapnya</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="Ayam Betutu.png" style=" width: 300px; height:200px;"></th>
+                    <th>
+                        <h2>Provinsi Bali</h2>
+                        <h3>Ayam Betutu</h3>
+                        <div id="div7" style="display:none;">Ayam betutu dimasak utuh dan bagian perutnya diisi dengan berbagai macam bumbu dan rempah. Ayam yang sudah dibumbui kemudian dibungkus daun pisang atau daun pinang dan dipanggang. Proses memanggangnya menggunakan panas bara api sekam, bisa memakan waktu pematangan selama sehari semalam.</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="jagung catemak.jpg" style="width: 300px; height:200px;"></th></th>
+                    <th>
+                        <h2>Provinsi Nusa Tenggara Timur</h2>
+                        <h3>Jagung Catemak</h3>
+                        <div id="div8" style="display:none;">Jagung catemak berbahan dasar jagung, labu lilin, kacang hijau, serta bumbu rempah. Nantinya bahan-bahan ini dimasak dengan cara tradisional asli NTT. Memiliki cita rasa yang gurih, jagung catemak identik dijadikan sebagai hidangan penutup tanpa dilengkapi lauk pauk tapi tidak mengurangi rasa kelezatannya oleh masyarakat NTT.</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="umbut rotan.jpg" style=" width: 300px; height:200px;"></th>
+                    <th>
+                        <h2>Provinsi Kalimantan Tengah</h2>
+                        <h3>Umbut Rotan </h3>
+                        <div id="div9" style="display:none;">Umbut Rotan atau dikenal uwut nang’e adalah kuliner suku Dayak yang berbahan dasar rotan muda. Rotan tersebut dibersihkan kemudian dibuang kulitnya dan dipotong dalam ukuran kecil. Umbut Rotan dimasak bersama dengan ikan baung, bumbu, dan terong asam. Rasa yang gurih, asam, dan sedikit pahit, yang dipadukan dengan manisnya daging ikan menjadi ciri khas dari kuliner ini.</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="bubur manado.png" style=" width: 300px; height:200px;"></th>
+                    <th>
+                        <h2>Provinsi Sulawesi Utara</h2>
+                        <h3>Bubur Manado</h3>
+                        <div id="div10" style="display:none;">Bubur Manado atau Tinutuan merupakan makanan khas daerah Sulawesi Utara yang paling populer. Bubur Manado merupakan olahan bubur dengan campurang berbagai sayuran seperti kangkung, bayam, jagung, singkong atau ubi, dan kemangi. Di Manado, Tinutuan biasa disajikan berasama sambal roa, dabu-dabu, atau ikan cakalang.</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="sate tuna.jpg" style=" width: 300px; height:200px;"></th>
+                    <th>
+                        <h2>Provinsi Gorontalo</h2>
+                        <h3>Sate Tuna </h3>
+                        <div id="div11" style="display:none;">Makanan khas Gorontalo yang menggunakan bahan dasar tuna memang banyak. Sate ikan tuna biasanya menjadi salah satu menu favorit. sate ikan tuna juga nampak seperti sate kambing ataupun sate ayam, berikut dengan ukuran potongan dagingnya. Yang unik dari sate tuna adalah dagingnya yang sangat lembut.</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="kohu-kohu.jpg" style="width: 300px; height:200px;"></th>
+                    <th>
+                        <h2>Provinsi Maluku</h2>
+                        <h3>Kohu-Kohu</h3>
+                        <div id="div12" style="display:none;">Kalau di Jawa ada urap, maka di Maluku ada kohu-kohu. Berbeda dengan urap, makanan khas Maluku ini merupakan campuran daun kemangi, kacang panjang, tauge yang masih mentah (tidak direbus) dan ditambahkan parutan kelapa, perasan lemon, irisan bawang, serta suwiran ikan cakalang asap atau teri atau tongkol. Bagi yang kurang tertarik dengan makanan mentah, ada varian lain dari kohu-kohu yaitu kohu-kohu rebus.</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><img src="Papeda.jpg" style="width: 300px; height:200px;"></th>
+                    <th>
+                        <h2>Provinsi Papua</h2>
+                        <h3>Papeda</h3>
+                        <div id="div13" style="display:none;">Papeda merupakan makanan yang dibuat dari bahan dasar tepung sagu. Rasa dari papeda pada umumnya adalah tawar. Orang Papua biasanya menyantap papeda bersama kuah bening dan ikan bakar. Selain menggunakan ikan bakar, papeda juga tak kalah nikmat apabila disajikan bersama ikan kuah kuning atau kelapa tua mentah.</div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+    <div class="footer">
+        <p>Terima Kasih</p>
+    </div>
+</body>
+</html>
